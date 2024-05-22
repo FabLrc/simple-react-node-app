@@ -1,0 +1,16 @@
+<div class="container my-5">
+	<%- include('../layouts/partials/form') %>
+</div>
+
+<div class="d-flex justify-content-between flex-wrap">
+	<% posts.forEach(post =>{%>
+		<div class="card" style="width: 18rem;">
+			<div class="card-body">
+				<h5 class="card-title"><%= post.titre%></h5>
+				<p class="card-text"><%= post.contenu %></p>
+				<h6 class="card-subtitle"><%= post.autheur%><h6/>
+			</div>
+		</div>
+	<%})%>
+</div>
+		
